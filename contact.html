@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us</title>
+
+<style>
+body{
+  margin:0;
+  font-family: Arial, Helvetica, sans-serif;
+  background:#eaeded;
+}
+
+/* NAV */
+.nav{
+  background:#131921;
+  color:white;
+  padding:18px 40px;
+  font-size:22px;
+  font-weight:bold;
+}
+
+/* HERO */
+.hero{
+  height:300px;
+  background:url("https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1600") center/cover;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:white;
+  font-size:40px;
+  font-weight:bold;
+}
+
+/* CONTAINER */
+.container{
+  width:85%;
+  margin:40px auto;
+  background:white;
+  padding:50px;
+}
+
+/* CONTACT GRID */
+.contact-grid{
+  display:flex;
+  gap:50px;
+  margin-top:30px;
+}
+
+/* LEFT INFO */
+.contact-info{
+  flex:1;
+}
+
+.contact-info h3{
+  margin-top:20px;
+}
+
+/* RIGHT FORM */
+.contact-form{
+  flex:1;
+}
+
+.contact-form input,
+.contact-form textarea{
+  width:100%;
+  padding:12px;
+  margin-top:10px;
+  margin-bottom:20px;
+  border:1px solid #ccc;
+  font-size:15px;
+}
+
+.contact-form textarea{
+  height:120px;
+  resize:none;
+}
+
+.contact-form button{
+  background:#ff9900;
+  border:none;
+  padding:12px 30px;
+  font-size:15px;
+  cursor:pointer;
+}
+
+.contact-form button:hover{
+  background:#e68a00;
+}
+
+/* FOOTER */
+.footer{
+  background:#232f3e;
+  color:white;
+  text-align:center;
+  padding:30px;
+  margin-top:40px;
+}
+
+/* RESPONSIVE */
+@media(max-width:900px){
+  .contact-grid{
+    flex-direction:column;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="nav">E-Commerce Platform</div>
+
+<div class="hero">
+Contact Us
+</div>
+
+<div class="container">
+
+<h2>Get in Touch</h2>
+<p>
+Have questions about your order, partnership opportunities, or general inquiries?  
+Our team is here to help. Reach out to us using the information below or send us a message.
+</p>
+
+<div class="contact-grid">
+
+  <!-- CONTACT INFO -->
+  <div class="contact-info">
+    <h3>Customer Support</h3>
+    <p>Email: support@yourstore.com</p>
+    <p>Phone: +1 (800) 123-4567</p>
+
+    <h3>Business Inquiries</h3>
+    <p>Email: business@yourstore.com</p>
+
+    <h3>Head Office</h3>
+    <p>
+      123 Commerce Street<br>
+      Seattle, WA 98101<br>
+      United States
+    </p>
+
+    <h3>Working Hours</h3>
+    <p>Monday – Friday: 9:00 AM – 6:00 PM</p>
+    <p>Saturday: 10:00 AM – 4:00 PM</p>
+  </div>
+
+  <!-- CONTACT FORM -->
+  <div class="contact-form">
+    <form>
+      <label>Full Name</label>
+      <input type="text" placeholder="Enter your full name" required>
+
+      <label>Email Address</label>
+      <input type="email" placeholder="Enter your email" required>
+
+      <label>Subject</label>
+      <input type="text" placeholder="Subject">
+
+      <label>Message</label>
+      <textarea placeholder="Write your message here..." required></textarea>
+
+      <button type="submit">Submit Message</button>
+    </form>
+  </div>
+
+</div>
+
+</div>
+
+<div class="footer">
+© 2025 E-Commerce Platform. All rights reserved.
+</div>
+
+</body>
+</html>
